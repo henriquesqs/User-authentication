@@ -16,7 +16,7 @@ class UserController(private val userRepo: UserRepository) {
     fun getAllUsers(): ResponseEntity<List<User>> = ResponseEntity.ok(userRepo.findAll())
 
     // Prints a simple message on /hello endpoint
-    @RequestMapping("/hello")
+    @GetMapping("/hello")
     fun hello() = "Hello, signup at /signup"
 
     // This method checks for a document on dabase given its id

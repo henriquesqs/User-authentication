@@ -9,8 +9,6 @@ data class User(
     val id: ObjectId = ObjectId.get(),
     var username: String,
     var password: String,
-    val createdAt: LocalDateTime = LocalDateTime.now(),
-    val modifiedAt: LocalDateTime = LocalDateTime.now()
 )
 
 // Request object to handle incoming requests
